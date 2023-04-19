@@ -3,6 +3,22 @@
     {
       "id": "Home Page",
       "isDefault": true
+    },
+    {
+      "id": "Artist 1",
+      "isDefault": false
+    },
+    {
+      "id": "Artist 2",
+      "isDefault": false
+    },
+    {
+      "id": "Label 1",
+      "isDefault": false
+    },
+    {
+      "id": "Label 2",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -11,6 +27,9 @@
   "color": "#D9E7FF",
   "icon": "location",
   "unpublishedAppLayout": {
+    "type": "TABLET"
+  },
+  "publishedAppLayout": {
     "type": "TABLET"
   },
   "unpublishedCustomJSLibs": [],

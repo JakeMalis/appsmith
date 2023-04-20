@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{addsong_form.data}}",
+      "body": "{{Add_Song_Form.data}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -52,7 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "addsong_form.data"
+      "Add_Song_Form.data"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

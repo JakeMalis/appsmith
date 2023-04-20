@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Top 10 songs from a genre- Use",
-    "slug": "top-10-songs-from-a-genre-use",
+    "name": "Top 10 in Genre- User",
+    "slug": "top-10-in-genre-user",
     "layouts": [
       {
         "viewMode": false,
@@ -313,7 +313,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Top 10 songs from a genre- Use_top_10_by_genre",
+              "id": "Top 10 in Genre- User_top_10_by_genre",
               "name": "top_10_by_genre",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -326,7 +326,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Top 10 songs from a genre- Use",
+        "id": "Top 10 in Genre- User",
         "deleted": false,
         "policies": [],
         "userPermissions": []

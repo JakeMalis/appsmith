@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Mange Artists",
-    "slug": "mange-artists",
+    "name": "Mange Artists - Artists",
+    "slug": "mange-artists-artists",
     "layouts": [
       {
         "viewMode": false,
@@ -1427,7 +1427,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Mange Artists_all_artists",
+              "id": "Mange Artists - Artists_all_artists",
               "name": "all_artists",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -1438,7 +1438,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Mange Artists",
+        "id": "Mange Artists - Artists",
         "deleted": false,
         "policies": [],
         "userPermissions": []

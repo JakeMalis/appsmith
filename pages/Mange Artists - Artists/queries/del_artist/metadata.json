@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "update_artist",
+    "name": "del_artist",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/s/updateArtist"
+        "url": "web:4000/s/deleteArtist?artist_id={{artist.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Mange Artists",
+    "pageId": "Mange Artists - Artists",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"Age\": {{AgeCopy.text}},\n\t\"artistID\": {{artistID.text}}\n}",
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "PUT",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -45,22 +45,21 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "AgeCopy.text",
-      "artistID.text"
+      "artist.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Mange Artists_update_artist",
+  "id": "Mange Artists - Artists_del_artist",
   "deleted": false,
-  "gitSyncId": "64415f50596b786c5d75eb9f_64416f33596b786c5d75ebdb"
+  "gitSyncId": "643dbb022c99165535011956_6440e9eb70e4cb519a7ed57b"
 }

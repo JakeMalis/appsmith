@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "top_10_by_genre",
+    "name": "all_artists",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/s/mostStreamed?genre_name='{{GenreName.selectedOptionLabel}}'"
+        "url": "web:4000/l/getAllArtists"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Top 10 songs from a genre- Use",
+    "pageId": "Mange Artists - Artists",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,6 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
@@ -43,23 +42,17 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasource.datasourceConfiguration.url"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "GenreName.selectedOptionLabel"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Top 10 songs from a genre- Use_top_10_by_genre",
+  "id": "Mange Artists - Artists_all_artists",
   "deleted": false,
-  "gitSyncId": "643dbb022c99165535011956_64402e521aaea27d8410909d"
+  "gitSyncId": "64415f50596b786c5d75eb9f_6441658f596b786c5d75ebc8"
 }

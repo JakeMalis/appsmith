@@ -5,15 +5,15 @@
       "isDefault": true
     },
     {
-      "id": "Mange Artists",
-      "isDefault": false
-    },
-    {
-      "id": "Top 10 songs from a genre- Use",
+      "id": "Mange Artists - Artists",
       "isDefault": false
     },
     {
       "id": "Add Songs - Artists",
+      "isDefault": false
+    },
+    {
+      "id": "Top 10 in Genre- User",
       "isDefault": false
     },
     {
@@ -22,10 +22,6 @@
     },
     {
       "id": "Charts - Users",
-      "isDefault": false
-    },
-    {
-      "id": "Delete Artist or Song - Artist",
       "isDefault": false
     }
   ],

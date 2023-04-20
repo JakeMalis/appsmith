@@ -5,6 +5,10 @@
       "isDefault": true
     },
     {
+      "id": "Mange Artists",
+      "isDefault": false
+    },
+    {
       "id": "Top 10 songs from a genre- Use",
       "isDefault": false
     },
@@ -21,15 +25,7 @@
       "isDefault": false
     },
     {
-      "id": "Add Artist - New Artist",
-      "isDefault": false
-    },
-    {
       "id": "Delete Artist or Song - Artist",
-      "isDefault": false
-    },
-    {
-      "id": "Update Artist Info",
       "isDefault": false
     }
   ],
@@ -37,6 +33,19 @@
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": false
+    }
+  },
+  "publishedApplicationDetail": {
     "navigationSetting": {
       "showNavbar": true,
       "orientation": "side",
@@ -52,7 +61,7 @@
   "color": "#D9E7FF",
   "icon": "location",
   "unpublishedAppLayout": {
-    "type": "TABLET"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "TABLET"

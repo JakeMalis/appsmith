@@ -81,65 +81,6 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "artist",
-              "displayName": "Input",
-              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "topRow": 13,
-              "bottomRow": 20,
-              "parentRowSpace": 10,
-              "labelWidth": 5,
-              "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 12.3125,
-              "dynamicTriggerPathList": [],
-              "resetOnSubmit": true,
-              "leftColumn": 4,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "labelPosition": "Top",
-              "labelStyle": "",
-              "inputType": "TEXT",
-              "isDisabled": false,
-              "key": "3oe16yrai0",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 27,
-              "dynamicHeight": "FIXED",
-              "widgetId": "gjjd211hq6",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
-              "minWidth": 450,
-              "isVisible": true,
-              "label": "Artist you would like to remove by ArtistID",
-              "version": 2,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "iconAlign": "left",
-              "defaultText": "",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
               "widgetName": "song",
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -149,8 +90,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 13,
-              "bottomRow": 20,
+              "topRow": 12,
+              "bottomRow": 19,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -160,7 +101,7 @@
               "parentColumnSpace": 12.3125,
               "dynamicTriggerPathList": [],
               "resetOnSubmit": true,
-              "leftColumn": 33,
+              "leftColumn": 19,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -177,7 +118,7 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 56,
+              "rightColumn": 42,
               "dynamicHeight": "FIXED",
               "widgetId": "ex4ez9x8vu",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -200,59 +141,6 @@
             {
               "resetFormOnClick": false,
               "boxShadow": "none",
-              "widgetName": "Button1",
-              "onClick": "{{del_artist.run()}}",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 22,
-              "bottomRow": 26,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 12.3125,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onClick"
-                }
-              ],
-              "leftColumn": 8,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Submit",
-              "isDisabled": false,
-              "key": "z60ok6kxwb",
-              "isDeprecated": false,
-              "rightColumn": 24,
-              "isDefaultClickDisabled": true,
-              "widgetId": "zg5jdni95v",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
               "widgetName": "Button2",
               "onClick": "{{del_song.run()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -262,8 +150,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 22,
-              "bottomRow": 26,
+              "topRow": 21,
+              "bottomRow": 25,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -274,7 +162,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 37,
+              "leftColumn": 23,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -287,7 +175,7 @@
               "isDisabled": false,
               "key": "z60ok6kxwb",
               "isDeprecated": false,
-              "rightColumn": 53,
+              "rightColumn": 39,
               "isDefaultClickDisabled": true,
               "widgetId": "vlb36pv017",
               "minWidth": 120,

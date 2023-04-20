@@ -1,0 +1,4 @@
+{
+	"Age": {{AgeCopy.text}},
+	"artistID": {{artistID.text}}
+}

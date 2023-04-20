@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/s/mostStreamed?genre_name={{genre_name.selectedOptionValue}}"
+        "url": "web:4000/s/mostStreamed?genre_name='{{GenreName.selectedOptionLabel}}'"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Charts - Users",
+    "pageId": "Top 10 songs from a genre- Use",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,27 +42,24 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "datasource.datasourceConfiguration.url"
-      },
-      {
-        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "genre_name.selectedOptionValue"
+      "GenreName.selectedOptionLabel"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Charts - Users_top_10_by_genre",
+  "id": "Top 10 songs from a genre- Use_top_10_by_genre",
   "deleted": false,
   "gitSyncId": "643dbb022c99165535011956_64402e521aaea27d8410909d"
 }

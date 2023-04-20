@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Charts - Users",
-    "slug": "charts-users",
+    "name": "Top 10 songs from a genre- Use",
+    "slug": "top-10-songs-from-a-genre-use",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 440,
+          "bottomRow": 470,
           "containerStyle": "none",
           "snapRows": 58,
           "parentRowSpace": 1,
@@ -26,7 +26,7 @@
           "leftColumn": 0,
           "children": [
             {
-              "widgetName": "Text1",
+              "widgetName": "top_10_songs",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -34,8 +34,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 2,
-              "bottomRow": 6,
+              "topRow": 0,
+              "bottomRow": 4,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -58,13 +58,13 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Look At The Different Charts",
-              "key": "fy9dqm55jr",
+              "text": "Top 10 songs from a genre",
+              "key": "a7gm2us8yd",
               "isDeprecated": false,
-              "rightColumn": 41,
+              "rightColumn": 47,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "qehmecj65e",
+              "widgetId": "2g2bzraqjk",
               "minWidth": 450,
               "isVisible": true,
               "fontStyle": "BOLD",
@@ -74,31 +74,31 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 2,
+              "originalTopRow": 0,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 7,
+              "originalBottomRow": 5,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
             {
               "boxShadow": "none",
-              "widgetName": "chart_name",
-              "isFilterable": true,
+              "widgetName": "GenreName",
+              "isFilterable": false,
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-              "labelText": "Select Chart",
+              "labelText": "Select Genre:",
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 7,
-              "bottomRow": 14,
+              "topRow": 5,
+              "bottomRow": 12,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
               "hideCard": false,
-              "defaultOptionValue": "",
+              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `Country`))(GenreName.options, GenreName.serverSideFiltering) }}",
               "animateLoading": true,
               "parentColumnSpace": 12.3125,
               "dynamicTriggerPathList": [
@@ -113,19 +113,22 @@
                 },
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "defaultOptionValue"
                 }
               ],
               "labelPosition": "Top",
-              "options": "[\n{\n\"label\": \"Billboard-Hot-100\",\n\"value\": \"Billboard-Hot-100\"\n},\n{\n\"label\": \"UK-Top-40\",\n\"value\": \"UK-Top-40\"\n},\n{\n\"label\": \"Oricon\",\n\"value\": \"Oricon\"\n},\n{\n\"label\": \"Jacobs\",\n\"value\": \"Jacobs\"\n},\n{\n\"label\": \"Johnston-Ondricka\",\n\"value\": \"Johnston-Ondricka\"\n},\n{\n\"label\": \"Schulist-LLC\",\n\"value\": \"Schulist-LLC\"\n},\n{\n\"label\": \"Hammes-Buckridge\",\n\"value\": \"Hammes-Buckridge\"\n},\n{\n\"label\": \"Tromp\",\n\"value\": \"Tromp\"\n},\n{\n\"label\": \"Nolan\",\n\"value\": \"Nolan\"\n},\n{\n\"label\": \"Mitchell-Botsford\",\n\"value\": \"Mitchell-Botsford\"\n},\n{\n\"label\": \"Daniel\",\n\"value\": \"Daniel\"\n},\n{\n\"label\": \"Hansen\",\n\"value\": \"Hansen\"\n},\n{\n\"label\": \"Bauch\",\n\"value\": \"Bauch\"\n},\n{\n\"label\": \"Hauck-Inc\",\n\"value\": \"Hauck-Inc\"\n},\n{\n\"label\": \"Stanton-Anderson\",\n\"value\": \"Stanton-Anderson\"\n},\n{\n\"label\": \"Kemmer\",\n\"value\": \"Kemmer\"\n},\n{\n\"label\": \"Hammes-Group\",\n\"value\": \"Hammes-Group\"\n},\n{\n\"label\": \"Welch-Inc\",\n\"value\": \"Welch-Inc\"\n},\n{\n\"label\": \"Yundt-Kub\",\n\"value\": \"Yundt-Kub\"\n},\n{\n\"label\": \"Stokes\",\n\"value\": \"Stokes\"\n},\n{\n\"label\": \"Turner-Group\",\n\"value\": \"Turner-Group\"\n},\n{\n\"label\": \"Grimes\",\n\"value\": \"Grimes\"\n},\n{\n\"label\": \"Lubowitz-Stracke\",\n\"value\": \"Lubowitz-Stracke\"\n},\n{\n\"label\": \"Zboncak-Group\",\n\"value\": \"Zboncak-Group\"\n},\n{\n\"label\": \"Rolfson\",\n\"value\": \"Rolfson\"\n},\n{\n\"label\": \"Hamill\",\n\"value\": \"Hamill\"\n},\n{\n\"label\": \"Thiel-Sons\",\n\"value\": \"Thiel-Sons\"\n},\n{\n\"label\": \"Hara-Schultz\",\n\"value\": \"Hara-Schultz\"\n},\n{\n\"label\": \"Gislason-Stehr\",\n\"value\": \"Gislason-Stehr\"\n}\n]",
+              "options": "[\n  {\n    \"label\": \"Country\",\n    \"value\": \"Country\"\n  },\n  {\n    \"label\": \"Pop\",\n    \"value\": \"Pop\"\n  },\n  {\n    \"label\": \"Rock\",\n    \"value\": \"Rock\"\n  },\n  {\n    \"label\": \"Hip-hop\",\n    \"value\": \"Hip-hop\"\n  }\n\t,\n  {\n    \"label\": \"Electronic\",\n    \"value\": \"Electronic\"\n  }\n]",
               "placeholderText": "Select option",
               "isDisabled": false,
-              "key": "t7mcc46m1y",
+              "key": "40wq1j03us",
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
               "rightColumn": 42,
               "dynamicHeight": "FIXED",
-              "widgetId": "9wh73hdckb",
+              "widgetId": "ixlrrnbhgc",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "minWidth": 450,
               "isVisible": true,
@@ -135,11 +138,9 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 9,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 16,
-              "onOptionChange": "{{chart.run()}}",
+              "onOptionChange": "{{top_10_by_genre.run()}}",
               "minDynamicHeight": 4
             },
             {
@@ -147,7 +148,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 16,
+              "topRow": 13,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -166,14 +167,16 @@
                   "key": "boxShadow"
                 },
                 {
+                  "key": "primaryColumns.NumStreams.computedValue"
+                },
+                {
                   "key": "primaryColumns.SongTitle.computedValue"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 16,
+              "leftColumn": 0,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
-              "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "isVisible": true,
@@ -205,20 +208,19 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681973026681,
-              "originalBottomRow": 46,
-              "primaryColumnId": "SongTitle",
+              "columnUpdatedAt": 1681972583121,
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "top_chart",
+              "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
+                "NumStreams",
                 "SongTitle"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 44,
+              "bottomRow": 47,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -229,9 +231,38 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "SongTitle": {
+                "NumStreams": {
                   "allowCellWrapping": false,
                   "index": 0,
+                  "width": 150,
+                  "originalId": "NumStreams",
+                  "id": "NumStreams",
+                  "alias": "NumStreams",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "NumStreams",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NumStreams\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "SongTitle": {
+                  "allowCellWrapping": false,
+                  "index": 1,
                   "width": 150,
                   "originalId": "SongTitle",
                   "id": "SongTitle",
@@ -253,7 +284,7 @@
                   "label": "SongTitle",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{top_chart.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SongTitle\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SongTitle\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -262,11 +293,11 @@
               "key": "y46yzzrcb6",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 49,
+              "rightColumn": 64,
               "textSize": "0.875rem",
-              "widgetId": "hh1ny67zc1",
+              "widgetId": "c201qoputg",
               "minWidth": 450,
-              "tableData": "{{chart.data}}",
+              "tableData": "{{top_10_by_genre.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -274,7 +305,6 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 18,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             }
@@ -283,12 +313,12 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Charts - Users_chart",
-              "name": "chart",
+              "id": "Top 10 songs from a genre- Use_top_10_by_genre",
+              "name": "top_10_by_genre",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "chart_name.selectedOptionLabel"
+                "GenreName.selectedOptionLabel"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -296,7 +326,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Charts - Users",
+        "id": "Top 10 songs from a genre- Use",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -307,5 +337,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "643dbb022c99165535011956_6440239f1aaea27d8410908f"
+  "gitSyncId": "643dbb022c99165535011956_644021f01aaea27d84109084"
 }

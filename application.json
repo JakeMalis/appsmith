@@ -5,7 +5,7 @@
       "isDefault": true
     },
     {
-      "id": "Charts - Users",
+      "id": "Top 10 songs from a genre- Use",
       "isDefault": false
     },
     {
@@ -17,7 +17,19 @@
       "isDefault": false
     },
     {
-      "id": "Label 2",
+      "id": "Charts - Users",
+      "isDefault": false
+    },
+    {
+      "id": "Add Artist - New Artist",
+      "isDefault": false
+    },
+    {
+      "id": "Delete Artist or Song - Artist",
+      "isDefault": false
+    },
+    {
+      "id": "Update Artist Info",
       "isDefault": false
     }
   ],

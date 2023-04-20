@@ -1,0 +1,1 @@
+{{update_artist_form.data}}

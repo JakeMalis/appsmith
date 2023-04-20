@@ -464,7 +464,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Add New Song",
+                      "text": "Add New Song:",
                       "key": "svuj200u5g",
                       "isDeprecated": false,
                       "rightColumn": 25.5,
@@ -1102,7 +1102,7 @@
                         "label"
                       ],
                       "topRow": 1,
-                      "bottomRow": 5,
+                      "bottomRow": 7,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1123,7 +1123,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Add New Song",
+                      "text": "Edit Existing Song Details:",
                       "key": "svuj200u5g",
                       "isDeprecated": false,
                       "rightColumn": 25.5,
@@ -1142,14 +1142,14 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 7,
+                      "originalBottomRow": 5,
                       "fontSize": "1.25rem",
                       "minDynamicHeight": 4
                     },
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2Copy",
+                      "widgetName": "submit",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1157,8 +1157,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 36,
-                      "bottomRow": 40,
+                      "topRow": 38,
+                      "bottomRow": 42,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1186,16 +1186,16 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 38,
+                      "originalTopRow": 36,
                       "disabledWhenInvalid": true,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 42,
+                      "originalBottomRow": 40,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "SongTitleCopy",
+                      "widgetName": "EditTitle",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1204,8 +1204,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 6,
-                      "bottomRow": 13,
+                      "topRow": 8,
+                      "bottomRow": 15,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -1249,12 +1249,12 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 8,
+                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 15,
+                      "originalBottomRow": 13,
                       "iconAlign": "left",
-                      "defaultText": "{{Music_Table.selectedRow.selectedRow.SongTitle}}",
+                      "defaultText": "{{Music_Table.selectedRow.SongTitle}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1268,8 +1268,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 13,
-                      "bottomRow": 20,
+                      "topRow": 15,
+                      "bottomRow": 22,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -1286,6 +1286,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -1310,12 +1313,12 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 15,
+                      "originalTopRow": 13,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 22,
+                      "originalBottomRow": 20,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{Music_Table.selectedRow.SongID}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1329,8 +1332,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 20,
-                      "bottomRow": 27,
+                      "topRow": 22,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -1347,6 +1350,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -1371,12 +1377,12 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 22,
+                      "originalTopRow": 20,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 29,
+                      "originalBottomRow": 27,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{Music_Table.selectedRow.BPM}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1390,8 +1396,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 27,
-                      "bottomRow": 34,
+                      "topRow": 29,
+                      "bottomRow": 36,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -1408,6 +1414,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -1432,12 +1441,12 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 29,
+                      "originalTopRow": 27,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 36,
+                      "originalBottomRow": 34,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{Music_Table.selectedRow.Danceability}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1469,6 +1478,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -1496,7 +1508,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{Music_Table.selectedRow.Duration}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1528,6 +1540,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -1555,7 +1570,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{Music_Table.selectedRow.NumStreams}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1587,6 +1602,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Top",
@@ -1614,7 +1632,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{Music_Table.selectedRow.ReleaseDate}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1676,7 +1694,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "{{Music_Table.selectedRow.selectedRow.AlbumID}}",
+                      "defaultText": "{{Music_Table.selectedRow.AlbumID}}",
                       "minDynamicHeight": 4
                     }
                   ],
